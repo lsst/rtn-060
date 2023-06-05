@@ -1,0 +1,69 @@
+\documentclass[OPS,authoryear,toc]{lsstdoc}
+\input{meta}
+
+% Package imports go here.
+
+% Local commands go here.
+
+%If you want glossaries
+%\input{aglossary.tex}
+%\makeglossaries
+
+\title{Supporting Computational Science with Rubin LSST}
+
+% Optional subtitle
+% \setDocSubtitle{A subtitle}
+
+\author{%
+Knut Olsen
+}
+
+\setDocRef{RTN-060}
+\setDocUpstreamLocation{\url{https://github.com/lsst/rtn-060}}
+
+\date{\vcsDate}
+
+% Optional: name of the document's curator
+% \setDocCurator{The Curator of this Document}
+
+\setDocAbstract{%
+More than 100 people from institutions around the world participated in a virtual workshop, "Supporting Computational Science with Rubin LSST," on March 21-22, 2023. The workshop welcomed anyone involved in the process of turning LSST data into science, especially those requiring specific computational hardware or software. The meeting focused on science use cases with Rubin LSST, and how these might be paired with specific In-Kind contributed computing resources (Independent Data Access Centers and Scientific Processing Centers (IDACs and SPCs). The workshop was followed by a two-day technical discussion between members of the Rubin IDACs Coordination Group and Rubin Data Management, aimed at understanding how to meet the demand from the community use cases and identifying technical challenges.  In this report, we summarize the outcome of the scientific workshop and the technical discussion, and identify some of the next steps needed for continuing progress.
+}
+
+% Change history defined here.
+% Order: oldest first.
+% Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
+% See LPM-51 for version number policy.
+\setDocChangeRecord{%
+  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{Knut Olsen}
+}
+
+
+\begin{document}
+
+% Create the title page.
+\maketitle
+% Frequently for a technote we do not want a title page  uncomment this to remove the title page and changelog.
+% use \mkshorttitle to remove the extra pages
+
+% ADD CONTENT HERE
+% You can also use the \input command to include several content files.
+
+\appendix
+% Include all the relevant bib files.
+% https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
+\section{References} \label{sec:bib}
+\renewcommand{\refname}{} % Suppress default Bibliography section
+\bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
+
+% Make sure lsst-texmf/bin/generateAcronyms.py is in your path
+\section{Acronyms} \label{sec:acronyms}
+\input{acronyms.tex}
+% If you want glossary uncomment below -- comment out the two lines above
+%\printglossaries
+
+
+
+
+
+\end{document}
